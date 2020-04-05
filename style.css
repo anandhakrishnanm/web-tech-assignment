@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lora', serif;
+    background: url('images/triangle-mosaic.png');
+    background-attachment: fixed;
+}
+header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 3px solid rgb(22, 121, 202);
+    background: url('images/crossword.png');
+    padding: 2vh;
+    position: fixed;
+    width: 100%;
+    height: 26vh;
+    z-index: 5;
+}
+.title{
+    margin: 3vw;
+    color: rgb(22, 121, 202);
+}
+.burger{
+    display: none;
+}
+.line{
+    width: 40px;
+    height: 8px;
+    background-color: rgb(22, 121, 202);
+    margin-top: 4px;
+}
+#college-logo{
+    width: 8rem;
+}
+#nav{
+    height: 74vh;
+    background-color: rgb(15, 139, 15);
+    color: white;
+    overflow-y: hidden;
+    position: fixed;
+    margin-top: 26vh;
+    width: 17vw;
+    text-align: center;
+}
+#nav ul{
+    display: flex;
+    flex-direction: column;
+}
+#nav ul li:hover{
+    background-color: rgb(30, 145, 199,0.6);
+}
+#nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+#nav ul li{
+    margin: 0.7rem auto;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+/* section styling */
+.section{
+    position: absolute;
+    top: 32vh;
+    left: 20vw;
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    line-height: 2rem;
+    margin-bottom: 8rem;
+}
+.section h2{
+    margin: 2rem auto;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    color: #3f4244;
+}
+/* end section stling*/
+footer{
+    background: rgb(155, 152, 152);
+    position: absolute;
+    top: 94vh;
+    z-index: 1;
+    height: 6vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(16, 44, 87);
+}
+@media screen and (max-width:700px){
+    .burger{
+        display: block;
+    }
+    #college-logo{
+        width: 4rem;
+    }
+    .title{
+        font-size: 0.45rem;
+    }
+    #nav{
+        width: 70vw;
+        display: none;
+        z-index: 15;
+        transition: 1sec ease-in;
+        
+    }
+    .section{
+        top: 32vh;
+        width: 100%;
+        line-height: 2rem;
+        margin-bottom: 8rem;
+        left: 5vw;
+        right: 5vw;
+        padding: 10px;
+    }
+    .section h2{
+        margin: 1rem auto;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        color: #3f4244;
+    }
+    footer{
+        flex-direction: column;
+        top: 90vh;
+        height: 10vh;
+        bottom: 0;
+        position: fixed;
+        
+    }
+    .section p{
+        margin-right: 2rem;
+        text-align: justify;
+    }
+    header{
+        justify-content: space-evenly;
+    }
+
+}

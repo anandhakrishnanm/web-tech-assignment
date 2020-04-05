@@ -1,0 +1,34 @@
+.gallery img{
+    /* width: 30vw; */
+    margin: 10px;
+    border-radius: 10px;
+}
+.gallery img:hover{
+    filter: grayscale(10%);
+    transform: scale(1.01);
+    z-index: 1;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.wide{
+    width: 100%;
+}
+.small{
+    width: 30vw;
+}
+.large{
+    width: 60%;
+}
+@media screen and (max-width:700px){
+    .small, .large{
+        width: 70vw;
+    }
+    .wide{
+        display: none;
+    }
+}
