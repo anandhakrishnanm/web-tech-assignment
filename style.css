@@ -81,6 +81,12 @@ header{
     line-height: 4rem;
     color: #3f4244;
 }
+.section h3{
+    margin: 1.3rem auto;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #3f4244;
+}
 /* end section stling*/
 footer{
     background: rgb(155, 152, 152);
